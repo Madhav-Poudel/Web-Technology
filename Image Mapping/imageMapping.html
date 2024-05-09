@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Mapping</title>
+  </head>
+  <body>
+    <img
+      src="../images/web.jpg"
+      usemap="#image-mapping"
+      alt=""
+      height="500px"
+      width="500px"
+    />
+    <map name="image-mapping">
+      <area shape="rect" coords="0,0,100,100" alt="" onclick="imageMapping()" />
+      <area
+        shape="circle"
+        coords="400,400,100"
+        href="../images/web.jpg"
+        alt=""
+      />
+      <area
+        shape="poly"
+        coords="500,300,100"
+        href="../images/coding_gif.gif"
+        alt=""
+      />
+    </map>
+
+    <script>
+      function imageMapping() {
+        alert("Hello");
+      }
+    </script>
+  </body>
+</html>
